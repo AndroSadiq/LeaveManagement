@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Leave Management</string>
+    <string name="msg_token_fmt">hhh</string>
+</resources>

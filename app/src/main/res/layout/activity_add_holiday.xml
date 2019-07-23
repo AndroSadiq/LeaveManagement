@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddHolidayActivity"
+    android:orientation="vertical"
+    android:background="@drawable/layout_border">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/layout_border">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_add_holiday"
+            app:title="Add Official Holiday">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        app:hintTextAppearance="@style/hintTextAppearance"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edt_add_holiday_name"
+            android:hint="Official Holiday Name"
+            android:textCursorDrawable="@drawable/cursur"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="5dp"
+        app:hintTextAppearance="@style/hintTextAppearance"
+        app:boxStrokeWidth="2dp"
+        android:textColorHint="@color/colorBlack"
+        app:boxStrokeColor="@color/colorBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edt_star_date"
+            android:editable="false"
+            android:hint="Holiday Start Date"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="5dp"
+        app:hintTextAppearance="@style/hintTextAppearance"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edt_end_date"
+            android:editable="false"
+            android:hint="Holiday End Date"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:text="Add Holiday"
+        android:id="@+id/btn_add_holiday"
+        android:layout_marginTop="5dp"
+        app:backgroundTint="#00000000"
+        android:textAllCaps="false"
+        android:theme="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/colorBlack"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorBlack"
+        app:cornerRadius="4dp"
+        android:textSize="17sp"
+        app:rippleColor="@color/colorBlack"/>
+</LinearLayout>
+
+</LinearLayout>

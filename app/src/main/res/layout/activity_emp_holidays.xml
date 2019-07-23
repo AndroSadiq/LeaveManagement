@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".employeeViewActivity.EmpHolidaysActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_holidays"
+        app:title="Official Holidays"
+        android:background="@drawable/layout_border">
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#645F5F"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tv_header"
+        android:textSize="17sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorBlack"
+        android:text="OFFICIAL HOLIDAYS"
+        android:gravity="center_vertical"
+        android:background="#C0BCBC"
+        android:paddingLeft="6dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_emp_holiday">
+
+    </ListView>
+
+
+</LinearLayout>

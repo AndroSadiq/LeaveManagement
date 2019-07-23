@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "716224118241",
+    "firebase_url": "https://dayoff-6dcc6.firebaseio.com",
+    "project_id": "dayoff-6dcc6",
+    "storage_bucket": "dayoff-6dcc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716224118241:android:3238e033d4afcb70",
+        "android_client_info": {
+          "package_name": "com.example.dayoff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716224118241-5t7nt67fm1ibrdgbn513s1uno6efqpg3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dayoff",
+            "certificate_hash": "bb15412c33903625ea05d1ed2b9d84bbc3912114"
+          }
+        },
+        {
+          "client_id": "716224118241-83i9qi7o2kfa9cj3oorgdbvi6r6tnb3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP0iUk_AYhL6lJIqZUQVnPzTqITVljoHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716224118241-83i9qi7o2kfa9cj3oorgdbvi6r6tnb3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.LeaveTypesActivity"
+    android:orientation="vertical"
+    android:background="@drawable/layout_border">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_leaves_types"
+        app:title="Leaves Types"
+        android:background="@drawable/layout_border">
+
+    </androidx.appcompat.widget.Toolbar>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#645F5F"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Add Other Leave Type"
+        android:fontFamily="sans-serif-black"
+        android:theme="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:id="@+id/btn_add_leave_type"
+        app:backgroundTint="#00000000"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconGravity="textStart"
+        app:iconPadding="15dp"
+        android:textSize="17sp"
+        app:iconSize="40dp"
+        app:iconTint="@color/colorBlack"
+
+        app:rippleColor="@color/colorBlack"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#645F5F"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tv_header"
+        android:textSize="17sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/colorBlack"
+        android:text="LEAVES TYPES"
+        android:gravity="center_vertical"
+        android:background="#C0BCBC"
+        android:paddingLeft="6dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_leaves_type">
+
+    </ListView>
+
+</LinearLayout>

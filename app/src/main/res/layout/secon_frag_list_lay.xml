@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/iv_second_frag"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_event_busy_black_24dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_second_frag_name"
+                android:textSize="18sp"
+                android:maxLength="8"
+                android:textColor="@color/colorBlack"
+                android:text="tttttttt"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_second_frag_start_date"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="hhhhh"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_second_frag_end_date"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="kkkkk"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tint"
+                app:elevation="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/fbtn_ok"
+                android:src="@drawable/ic_check_black_24dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/tint"
+                app:elevation="0dp"
+                android:layout_margin="5dp"
+                android:id="@+id/fbtn_close"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

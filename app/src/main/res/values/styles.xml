@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="hintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+<style name="tint" parent="Widget.Design.FloatingActionButton">
+    <item name="backgroundTint">#FF9800</item>
+    <item name="rippleColor">#000</item>
+    <item name="fabSize">normal</item>
+
+</style>
+
+    <style name="linearLayoutRipple" parent="Widget.MaterialComponents.Button">
+        <item name="rippleColor">@color/colorBlack</item>
+    </style>
+
+    <style name="checkBoxColor" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#000</item>
+        <item name="colorControlNormal">#FF6D00</item>
+
+    </style>
+
+    <style name="backButtonColor" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#000</item>
+    </style>
+
+    <style name="tabMain" parent="Theme.AppCompat">
+
+        <item name="colorAccent">#00000000</item>
+    </style>
+
+
+
+
+
+</resources>

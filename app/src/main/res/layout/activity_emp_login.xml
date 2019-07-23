@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".employeeViewActivity.EmpLoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/layout_border">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv"
+            android:text="Login"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_layout_empusername"
+            android:layout_marginTop="5dp"
+            app:boxStrokeWidth="2dp"
+            app:hintTextAppearance="@style/hintTextAppearance"
+            app:boxStrokeColor="#000"
+            android:textColorHint="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edt_empuser"
+                android:hint="Username"
+                android:textCursorDrawable="@drawable/cursur"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:paddingLeft="9dp"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_person_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_layout_emppassword"
+                android:layout_marginTop="10dp"
+                app:boxStrokeColor="#000"
+                app:boxStrokeWidth="2dp"
+                app:hintTextAppearance="@style/hintTextAppearance"
+                android:textColorHint="#000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/edt_emppassword"
+                    android:textSize="17sp"
+                    android:textCursorDrawable="@drawable/cursur"
+                    android:paddingLeft="9dp"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:paddingEnd="9dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_emp"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="-35dp"
+                android:src="@drawable/ic_visibility_off_black_24dp"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_emp_login"
+            android:theme="@style/Widget.MaterialComponents.Button"
+            android:text="Login"
+            app:backgroundTint="#00000000"
+            app:strokeColor="@color/colorBlack"
+            app:strokeWidth="1dp"
+            app:cornerRadius="4dp"
+            app:rippleColor="@color/colorBlack"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_emp_forgot"
+            android:text="Forgot Password?"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="Don't have an account? " />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_emp_sign_up"
+            android:theme="@style/Widget.MaterialComponents.Button"
+            android:text="Sign Up"
+            android:textColor="#000"
+            app:backgroundTint="#00000000"
+            app:rippleColor="@color/colorBlack"
+            app:cornerRadius="4dp"
+            android:textSize="17sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</LinearLayout>

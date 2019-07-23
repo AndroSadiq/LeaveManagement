@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dayoff">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/leave_management"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".employeeViewActivity.EmpLoginActivity" />
+        <activity android:name=".employeeViewActivity.EmpChangePasswordActivity" />
+        <activity android:name=".employeeViewActivity.EmpEditProfileActivity" />
+        <activity android:name=".employeeViewActivity.EmpHolidaysActivity" />
+        <activity android:name=".employeeViewActivity.EmpSettingActivity" />
+        <activity android:name=".employeeViewActivity.EmpHomePageActivity" />
+        <activity android:name=".employeeViewActivity.EmpSignUpActivity" />
+        <activity android:name=".Admin.ChangePasswordActivity" />
+        <activity android:name=".Admin.EditProfileActivity" />
+        <activity android:name=".Admin.AddOtherLeaveTypeActivity" />
+        <activity android:name=".Admin.LeaveTypesActivity" />
+        <activity android:name=".Admin.WorkingDaysActivity" />
+        <activity android:name=".Admin.AddHolidayActivity" />
+        <activity android:name=".Admin.HomePageActivity" />
+        <activity
+            android:name=".Admin.SignUpActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Admin.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Admin.SettingsActivity" />
+        <activity android:name=".Admin.HolidaysActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>
